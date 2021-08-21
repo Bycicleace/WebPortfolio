@@ -74,10 +74,12 @@ section h2, main h2 {
     border-bottom: 1px solid var(--darkest);
     width: 75%;
     margin: 0 auto 10px auto;
+    color: var(--primaryDark)
 }
 
 section p, main p {
     padding: 5px;
+    text-align: center;
 }
 
 .hero {
@@ -87,4 +89,14 @@ section p, main p {
     background-position: 80%;
     height: 200px;
     width: 100%;
+}
+
+.bio div {
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+}
+.bio img {
+    width: 50%;
+    border-radius: 50%;
 }
