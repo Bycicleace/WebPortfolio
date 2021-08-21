@@ -68,6 +68,18 @@ section {
     padding: 10px 0;
 }
 
+section h2, main h2 {
+    font-size: 22px;
+    text-align: center;
+    border-bottom: 1px solid var(--darkest);
+    width: 75%;
+    margin: 0 auto 10px auto;
+}
+
+section p, main p {
+    padding: 5px;
+}
+
 .hero {
     background-image: url("../images/hero-bg.jpg");
     background-size: cover;
