@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --darkest: #090909;
+    --dark: #3F3F3F;
+    --light: #C3C3C3;
+    --lightest: #F9F9F9;
+    --primaryDark: #003300;
+    --primaryLight: #009900;
+    --secondaryDark: #1974D3;
+    --secondaryLight: #53CCEC;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--light);
+}
+
+header {
+    background-image: url("../images/hero-bg.jpg");
+    background-color: rgba(0, 0, 0, 1);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    width: 100%;
+    color: var(--light);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-size: 36px;
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.75);
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav {
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.75)
+}
+
+header nav ul {
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+header nav ul li {
+    padding: 10px 0;
+    align-items: center;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--light);
+    font-size: 22px;
+}
+
+section {
+    padding: 10px 0;
+}
+
+.hero {
+    background-image: url("../images/hero-bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    height: 200px;
+    width: 100%;
+}
