@@ -24,7 +24,7 @@ header {
     background-color: rgba(0, 0, 0, 1);
     background-size: cover;
     background-attachment: fixed;
-    background-position: bottom;
+    background-position: 80%;
     width: 100%;
     color: var(--light);
     display: flex;
@@ -126,7 +126,7 @@ footer {
     background-image: url("../images/hero-bg.jpg");
     background-size: cover;
     background-attachment: fixed;
-    background-position: 80%;
+    background-position: bottom;
     height: 200px;
     width: 100%;
 }
