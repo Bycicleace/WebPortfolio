@@ -136,7 +136,7 @@ footer {
     text-align: center;
     padding: 5px;
 }
-.bio img {
+.bio div img {
     width: 50%;
     border-radius: 50%;
 }
@@ -190,4 +190,63 @@ footer {
         padding: 10px 20px;
         align-items: center;
     }
+
+    section h2, main h2 {
+        font-size: 32px;
+    }
+
+    section p, main p {
+        text-align: left;
+        border: 1px solid green;
+        font-size: 18px;
+        width: 70%;
+    }
+
+    main section {
+        justify-content: center;
+    }
+
+    main section article {
+        width: 45%;
+        margin: 15px;
+        height: 200px;
+    }
+
+    .bio {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .bio div {
+        text-align: left;
+        width: 30%;
+        border: 1px solid red;
+    }
+
+    .bio div img {
+        width: 100%;
+    }
+
+    .contact {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact h3 {
+        width: 100%;
+    }
+
+    .contact p {
+        text-align: center;
+    }
+
+    #project1 {
+        height: 400px;
+        width: 100%;
+    }
 }
+
