@@ -158,6 +158,15 @@ footer {
     border-radius: 50%;
 }
 
+.contact p a {
+    text-decoration: none;
+}
+
+.contact p a img {
+    height: 50px;
+    margin: 15px 15px 0 0;
+}
+
 #project1 {
     height: 200px;
     background-image: url("../images/runbuddy.png");
