@@ -150,7 +150,7 @@ footer {
 }
 
 .bio div p {
-    font-size: 2.2vw;
+    font-size: 20px;
 }
 
 .bio div div img {
@@ -257,6 +257,7 @@ footer {
 
     .bio div p {
         width: 100%;
+        font-size: 2.5vw;
     }
 
     .bio div div {
