@@ -30,6 +30,7 @@ header {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    z-index: 999;
 }
 
 header h1 {
@@ -64,6 +65,11 @@ header nav ul li a {
     font-size: 22px;
 }
 
+header nav ul li a:hover {
+    color: var(--lightest);
+    background-color:rgba(0, 0, 0, 1);
+}
+
 section {
     padding: 10px 0;
 }
@@ -93,7 +99,7 @@ main section {
     flex-wrap: wrap;
 }
 
-main section article {
+main section a {
     margin: 5px;
     width: 100%;
     height: 125px;
@@ -104,9 +110,15 @@ main section article {
     border-radius: 15px;
     background-size: cover;
     background-position: bottom;
+    filter: grayscale(1);
+    text-decoration: none;
 }
 
-main section article h3 {
+main section a:hover {
+    filter: grayscale(0);
+}
+
+main section a h3 {
     padding: 0 5px;
     background-color: rgba(0, 0, 0, 0.75);
     width: 100%;
@@ -136,6 +148,11 @@ footer {
     text-align: center;
     padding: 5px;
 }
+
+.bio div p {
+    font-size: 2.2vw;
+}
+
 .bio div div img {
     width: 50%;
     border-radius: 50%;
@@ -143,7 +160,7 @@ footer {
 
 #project1 {
     height: 200px;
-    background-image: url("../images/lighthouse.jpg");
+    background-image: url("../images/runbuddy.png");
 }
 
 #project2 {
@@ -170,6 +187,9 @@ footer {
 @media screen and (min-width: 700px) {
     header {
         justify-content: space-between;
+        position: --webkit-sticky;
+        position: sticky;
+        top: 0;
     }
 
     header h1 {
@@ -205,11 +225,11 @@ footer {
         justify-content: center;
     }
 
-    main section article h3 {
+    main section a h3 {
         font-size: 24px;
     }
 
-    main section article {
+    main section a {
         width: 45%;
         margin: 15px;
         height: 200px;
@@ -233,7 +253,8 @@ footer {
     .bio div div {
         float: left;
         text-align: left;
-        width: 30%;
+        width: 35%;
+        padding: 0 15px;
     }
 
     .bio div div img {
@@ -279,26 +300,17 @@ footer {
         width: 60%;
     }
 
-    main section article {
+    main section a {
         width: 30%;
         height: 250px;
     }
 
-    main section article h3 {
+    main section a h3 {
         font-size: 32px;
     }
 
     .hero {
         height: 400px;
-    }
-
-    .bio div p {
-        width: 100%;
-    }
-
-    .bio div div {
-        width: 40%;
-        padding: 0 15px;
     }
 
     .contact h3 {
@@ -325,14 +337,5 @@ footer {
 
     .hero {
         height: 500px;
-    }
-
-    .bio div div {
-        width: 30%;
-    }
-
-    .bio div p {
-        width: 100%;
-        font-size: 28px;
     }
 }
