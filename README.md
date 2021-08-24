@@ -19,4 +19,4 @@ GIVEN I need to sample a potential employee's previous work:
 [https://Bycicleace.github.io/WebPortfolio](https://Bycicleace.github.io/WebPortfolio)
 
 ## Site Preview
-Coming Soon...
+![Website Preview](./assets/images/fullWebpage.png)
