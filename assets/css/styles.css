@@ -193,17 +193,21 @@ footer {
 
     section h2, main h2 {
         font-size: 32px;
+        margin-bottom: 20px;
     }
 
     section p, main p {
         text-align: left;
-        border: 1px solid green;
         font-size: 18px;
         width: 70%;
     }
 
     main section {
         justify-content: center;
+    }
+
+    main section article h3 {
+        font-size: 24px;
     }
 
     main section article {
@@ -222,7 +226,6 @@ footer {
     .bio div {
         text-align: left;
         width: 30%;
-        border: 1px solid red;
     }
 
     .bio div img {
@@ -250,3 +253,43 @@ footer {
     }
 }
 
+@media screen and (min-width: 1024px) {
+    header h1 {
+        font-size: 48px;
+    }
+
+    header nav ul li a {
+        font-size: 28px;
+    }
+
+    section h2, main h2 {
+        font-size: 38px;
+    }
+
+    section p {
+        font-size: 24px;
+        width: 60%;
+    }
+
+    main section article {
+        width: 30%;
+        height: 250px;
+    }
+
+    main section article h3 {
+        font-size: 32px;
+    }
+
+    .bio div {
+        width: 40%;
+        padding: 0 15px;
+    }
+
+    .contact h3 {
+        font-size: 28px;
+    }
+
+    #project1 {
+        height: 500px;
+    }
+}
